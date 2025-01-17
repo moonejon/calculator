@@ -54,6 +54,19 @@
   box-shadow: 0 4px 0 #bc8a4f,
     /* Bottom shadow for height */ inset 0 2px 0 rgba(255, 255, 255, 0.2); /* Top highlight */
   transition: all 0.1s ease;
+
+  color: white;
+  -webkit-tap-highlight-color: transparent; /* Removes tap highlight on iOS */
+  -webkit-text-fill-color: white;          /* Forces white text on iOS */
+  text-decoration: none;                    /* Prevents any text decoration */
+  user-select: none;                        /* Prevents text selection */
+  -webkit-user-select: none;               /* Safari version */
+}
+
+.keypad button:focus {
+    outline: none;
+    color: white;
+    -webkit-text-fill-color: white;
 }
 
 .keypad button:hover {
